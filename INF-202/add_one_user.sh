@@ -16,13 +16,14 @@ keyname="$firstname"_"$lastname"
 privatekey="$keyname"
 publickey="$keyname.pub"
 email=$4
+passphrase=$5
 
 adduser \
 --gecos "$fullname,,," \
  $username
 
 # Create SSH keys
-./generate_one_key.sh $keyname $email
+./generate_one_key.sh $keyname $email $passphrase
 
 # Install SSH key
 sshdir="/home/$username/.ssh"
