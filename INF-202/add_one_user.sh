@@ -23,7 +23,7 @@ adduser \
  $username
 
 # Create SSH keys
-./generate_one_key.sh $keyname $email $passphrase
+./generate_one_ssh_key.sh $keyname $email $passphrase
 
 # Install SSH key
 sshdir="/home/$username/.ssh"
