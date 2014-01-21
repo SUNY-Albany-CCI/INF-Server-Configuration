@@ -10,6 +10,8 @@ keyfilename=$1
 email=$2
 commenttext=$email
 passphrase=$3
+emailusername=$4
+emailpassword=$5
 
 ssh-keygen \
 -t rsa \
@@ -21,5 +23,8 @@ ssh-keygen \
 $email \
 'INF-202 Credentials' \
 'Please find attached your credentials for your AWS server account.' \
-./keys_directory/$keyfilename
+./keys_directory/$keyfilename \
+$emailusername \
+$emailpassword
+
 

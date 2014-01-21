@@ -3,14 +3,16 @@ recipient=$1
 subject=$2
 message=$3
 filenameAttachment=$4
+emailusername=$5
+emailpassword=$6
 sendEmail \
--f 'professor@albany.edu' \
+-f "$emailusername@albany.edu" \
 -t $recipient \
 -u $subject \
 -m $message \
 -a $filenameAttachment \
 -o tls=yes \
 -s pod51009.outlook.com:587 \
--xu professor@albany.edu \
--xp "PASSWORD"
+-xu "$emailusername@albany.edu" \
+-xp $emailpassword
 
