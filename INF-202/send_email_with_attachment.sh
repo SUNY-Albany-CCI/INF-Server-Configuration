@@ -14,5 +14,6 @@ sendEmail \
 -o tls=yes \
 -s pod51009.outlook.com:587 \
 -xu "$emailusername@albany.edu" \
--xp $emailpassword
+-xp $emailpassword \
+-cc "$emailusername@albany.edu"
 
