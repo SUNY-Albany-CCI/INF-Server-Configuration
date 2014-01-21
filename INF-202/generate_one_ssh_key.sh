@@ -7,7 +7,8 @@
 make -p keys_directory
 
 keyfilename=$1
-commenttext=$2
+email=$2
+commenttext=$email
 passphrase=$3
 
 ssh-keygen \
@@ -15,3 +16,10 @@ ssh-keygen \
 -C "$commenttext" \
 -P $passphrase \
 -f ./keys_directory/$keyfilename
+
+./send_email_with_attachment.sh  \
+$email \
+'INF-202 Credentials' \
+'Please find attached your credentials for your AWS server account.' \
+./keys_directory/$keyfilename
+
