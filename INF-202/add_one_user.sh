@@ -29,8 +29,8 @@ adduser \
 sshdir="/home/$username/.ssh"
 mkdir $sshdir
 chmod 700 $sshdir
-cp  $privatekey   $sshdir
-cp  $publickey    $sshdir
-cat $publickey >> $sshdir/authorized_keys
+cp  ./keys_directory/$privatekey   $sshdir
+cp  ./keys_directory/$publickey    $sshdir
+cat ./keys_directory/$publickey >> $sshdir/authorized_keys
 chown $username:$username -R $sshdir
 
