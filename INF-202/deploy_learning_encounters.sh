@@ -19,4 +19,5 @@ git clone --recursive $SUNYGithub/Evolution-Of-Cooperation.git
 git clone --recursive $SUNYGithub/Raspberry-Pi-Web-Server-With-Python.git
 git clone --recursive $SUNYGithub/Who-Killed-Aaron-Swartz.git
 
+cp index_for_server.html  /var/www/index.html
 
