@@ -21,3 +21,5 @@ git clone --recursive $SUNYGithub/Who-Killed-Aaron-Swartz.git
 
 cp index_for_server.html  /var/www/index.html
 
+cp cron_job_to_update_encounter_git_clones.sh  /var/www
+
