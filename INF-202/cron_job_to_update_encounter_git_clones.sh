@@ -11,10 +11,9 @@
 #
 #
 
-cd /var/www/LearningEncounters
-
-for i in *
+for i in /var/www/LearningEncounters/*
 do
-   cd $i
-   git pull origin master
+    cd $i
+    git pull origin master
 done
+
