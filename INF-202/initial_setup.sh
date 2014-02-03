@@ -10,4 +10,5 @@ sudo apt-get install apache2
 sudo apt-get install git
 sudo apt-get install build-essential
 sudo apt-get install tree
+sudo apt-get install nodejs
 
