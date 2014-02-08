@@ -11,4 +11,7 @@ sudo apt-get install git
 sudo apt-get install build-essential
 sudo apt-get install tree
 sudo apt-get install nodejs
+sudo apt-get install mongodb
+sudo apt-get install openjdk-7-jdk
+
 
