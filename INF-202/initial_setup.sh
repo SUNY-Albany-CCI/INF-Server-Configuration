@@ -15,6 +15,8 @@ sudo apt-get install npm
 sudo npm update
 sudo npm install mime
 sudo apt-get install mongodb
+sudo apt-get install unzip
+sudo apt-get install exuberant-ctags
 sudo apt-get install openjdk-7-jdk
 
 
